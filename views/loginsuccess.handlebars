@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>ECare - Feeling More Useful | Me</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="https://i.imgur.com/H8wiJy1.png">
+
+    <!-- Core Style CSS -->
+
+    <link rel="stylesheet" href="/css/core-style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <style>
+
+
+
+    img.main-img{
+      width: 368px;
+      height: 500px;
+
+    }
+    </style>
+
+</head>
+
+<body>
+    <!-- Search Wrapper Area Start -->
+    <div class="search-wrapper section-padding-100">
+        <div class="search-close">
+            <i class="fa fa-close" aria-hidden="true"></i>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="search-content">
+                        <form action="#" method="get">
+                            <input type="search" name="search" id="search" placeholder="Type your keyword...">
+                            <button type="submit"><img src="img/core-img/search.png" alt=""></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Wrapper Area End -->
+
+    <!-- ##### Main Content Wrapper Start ##### -->
+    <div class="main-content-wrapper d-flex clearfix">
+
+        <!-- Mobile Nav (max width 767px)-->
+        <div class="mobile-nav">
+            <!-- Navbar Brand -->
+            <div class="amado-navbar-brand">
+                <a href="home"><img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/308/959947308_540a8725-ca1e-40ec-8b4c-1cd3db55f457.png?cb=1530653134" width = "55" height = "55" alt=""></a>
+            </div>
+            <!-- Navbar Toggler -->
+            <div class="amado-navbar-toggler">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <!-- Header Area Start -->
+        {{> headersec }}
+        <!-- Header Area End -->
+
+        <!-- Product Details Area Start -->
+        <div class="single-product-area section-padding-100 clearfix">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-12">
+                    </div>
+                </div>
+
+
+                <!-- Edit Form -->
+                <form class="cart clearfix" method="post" action='/signout'>
+
+                  <button class="btn amado-btn mb-15" >Sign Out
+                  </button>
+
+
+                  <a href="additem" class="btn amado-btn mb-15">Add Item
+                  </a>
+
+                  <h6 align = "right">
+                  Your Username: {{user.username}}
+                  </h6>
+
+                </form>
+                <br><br><br>
+
+
+
+
+
+                <!--first -->
+                {{#each products}}
+                    <div class="row">
+                            <div class="col-12 col-lg-7">
+                                <div class="single_product_thumb">
+                                    <div id="product_details_slider" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li class="active" data-target="#product_details_slider" data-slide-to="0" style="background-size:cover; background-image: url({{this.FirstPic}})">
+                                            </li>
+                                            <li data-target="#product_details_slider" data-slide-to="1" style="background-size:cover; background-image: url({{this.SecondPic}});">
+                                            </li>
+                                            <li data-target="#product_details_slider" data-slide-to="2" style="background-size:cover; background-image: url({{this.ThirdPic}});">
+                                            </li>
+                                            <li data-target="#product_details_slider" data-slide-to="3" style="background-size:cover; background-image: url({{this.FourthPic}});">
+                                            </li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <a class="gallery_img" href="{{this.FirstPic}}">
+                                                    <img class="d-block w-100 main-img" src="{{this.FirstPic}}" alt="First slide">
+                                                </a>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <a class="gallery_img" href="{{this.SecondPic}}">
+                                                    <img class="d-block w-100 main-img" src="{{this.SecondPic}}" alt="Second slide">
+                                                </a>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <a class="gallery_img" href="{{this.ThirdPic}}">
+                                                    <img class="d-block w-100 main-img" src="{{this.ThirdPic}}" alt="Third slide">
+                                                </a>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <a class="gallery_img" href="{{this.FourthPic}}">
+                                                    <img class="d-block w-100 main-img" src="{{this.FourthPic}}" alt="Fourth slide">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="single_product_desc">
+                                    <!-- Product Meta Data -->
+                                    <div class="product-meta-data">
+                                        <div class="line"></div>
+                                        <p class="product-price">${{this.price}}</p>
+                                        <a href="product-details/{{this._id}}">
+                                            <h6>{{this.name}}</h6>
+                                        </a>
+                                        <!-- Ratings & Review -->
+                                        <div class="ratings-review mb-15 d-flex align-items-center justify-content-between">
+                                            <div class="ratings">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="review">
+
+                                            </div>
+                                        </div>
+                                        <!-- Avaiable -->
+                                        <p class="avaibility"><i class="fa fa-circle"></i> In Stock</p>
+                                    </div>
+
+                                    <div class="short_overview my-5">
+                                        <p>{{this.Description}}</p>
+                                    </div>
+
+                                    <!-- Edit Form -->
+                                    <a href="edititem/{{this._id}}" class="btn amado-btn mb-15">Edit Item
+                                    </a>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <br><br><br>
+                {{/each}}
+
+
+        <!-- Product Details Area End -->
+    </div>
+    <!-- ##### Main Content Wrapper End ##### -->
+
+    <!-- ##### Newsletter Area Start ##### -->
+    <section class="newsletter-area section-padding-100-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Newsletter Text -->
+                <div class="col-12 col-lg-8 col-xl-7">
+                    <div class="newsletter-text mb-100">
+                        <h2>Donate for <span>THE COMMUNITY</span></h2>
+                        <p>We hope you can also donate when you buy those stuff. Minority group is hard to live but they are trying hard. We can not deny this fact so it should be really encouraged. </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-1 col-xl-0">
+                </div>
+                <!-- Newsletter Form -->
+                <div class="col-12 col-lg-3 col-xl-5">
+                    <div class="newsletter-form mb-100">
+                        <form action="index.html" method="post">
+                            <div class="amado-btn-group mt-30 mb-100">
+                            <!--<a href="#" class="btn amado-btn mb-15">%Discount%</a>-->
+                                <a href="http://www.jiandongren.org/donation.aspx" class="btn amado-btn mb-15">D O N A T E</a>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Newsletter Area End ##### -->
+
+
+
+
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### Footer Area End ##### -->
+
+
+
+
+    <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+</body>
+
+</html>

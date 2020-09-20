@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>ECare - Feeling More Useful | Additem</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="https://i.imgur.com/H8wiJy1.png">
+
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="/css/core-style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <style>
+
+    img{
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            border 1px
+            }
+
+    body {margin:0;}
+
+
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    button:focus {
+    outline: none;
+
+
+}
+
+
+
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.cancelbtn:focus {
+  outline:none;
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+
+
+
+.signupbtn {
+  float: left;
+  width: 50%;
+  background-color: orange;
+}
+
+.cancelbtn{
+  float: left;
+  width: 50%;
+}
+
+.signupbtn:focus {
+  outline:none;
+}
+
+/* Add padding to container elements */
+
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+</head>
+
+
+
+
+
+<body>
+
+    <div class="main-content-wrapper d-flex clearfix">
+
+
+
+      <div class="container-fluid">
+        <br><br><br>
+        <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/308/959947308_540a8725-ca1e-40ec-8b4c-1cd3db55f457.png?cb=1530653134" alt="">
+
+
+
+          <div class="row">
+
+
+              <div class ="col-sm-1"> </div>
+              <div class="col-sm-10">
+
+                <div class="checkout_details_area mt-50 clearfix">
+
+                    <div class="cart-title">
+                      <!-- <img src="https://www.shareicon.net/download/2015/09/10/98908_man.svg" style="height: 30px; width: 30px" alt="Avatar" align = "left"> -->
+                      <h1>Login</h1>
+                      <p>Login to your merchant account.</p>
+                      <hr>
+                    </div>
+
+                    <form action="/validate" method="get">
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <input name = "uname" type="text" class="form-control" id="user_name" value="" placeholder="Enter Username" required>
+                            </div>
+
+
+
+
+                            <div class="col-12 mb-3">
+                                <input name = "psw" type="password" class="form-control" id="user_password" placeholder="Enter Password" value="">
+                            </div>
+
+                            <label>
+                              <input type="checkbox" checked="checked" name="remember"> Remember me
+
+
+                            </label>
+
+
+                            <button type="submit" style="font-size: 20px">Login</button>
+
+                              <button style="font-size: 20px" type="button" onclick = "window.location.href='signup'" class="signupbtn">Sign Up</button>
+                              <button style="font-size: 20px" type="button" class="cancelbtn" onclick="window.location.href='shop'">Cancel</button>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </form>
+                    <br><br><br>
+                  </div>
+                  <div class ="col-sm-1"> </div>
+                </div>
+            </div>
+
+
+
+
+
+                </div>
+            </div>
+
+    </div>
+</div>
+
+</div>
+<!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
+<script src="js/jquery/jquery-2.2.4.min.js"></script>
+<!-- Popper js -->
+<script src="js/popper.min.js"></script>
+<!-- Bootstrap js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugins js -->
+<script src="js/plugins.js"></script>
+<!-- Active js -->
+<script src="js/active.js"></script>
+
+</body>

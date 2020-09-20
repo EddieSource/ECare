@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ECare - Feeling More Useful</title>
+
+  <link rel="icon" href="https://i.imgur.com/H8wiJy1.png">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<style>
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+/*
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+*/
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+body {
+  /* Location of the image */
+  background-image: url("https://images.pexels.com/photos/573241/pexels-photo-573241.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940");
+
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+  @media only screen and (max-width: 767px) {
+  body {
+    /* The file size of this background image is 93% smaller
+       to improve page load speed on mobile internet connections */
+    background-image: url(images/background-photo-mobile-devices.jpg);
+  }
+}
+
+}
+
+
+.btn-primary-outline {
+  background-color: transparent;
+  border-color: #ccc;
+  color:white;
+
+}
+.btn-primary-outline:link {
+    color: white;
+    background-color: transparent;
+    border-color: #ccc;
+
+}
+.btn-primary-outline:hover {
+    color: white;
+    background-color: transparent;
+    border-color: #ccc;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+}
+.btn-primary-outline:active {
+    background-color: transparent;
+    border-color: #ccc;
+    color:white;
+
+
+}
+
+.btn-primary-outline:focus {
+    outline: none;
+
+    background-color: transparent;
+    border-color: #ccc;
+    color:white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.btn-primary-outline:visited {
+    background-color: transparent;
+    border-color: #ccc;
+    color: white;
+
+}
+
+img{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        border 1px
+        }
+
+</style>
+
+<script>
+function explore() {
+
+
+  var elem = document.getElementById("ExploreStory");
+
+  if(elem.innerText == "EXPLORE OUR STORY >")
+    {elem.innerText = "EXPLORE OUR STORY <";
+    document.getElementById("demo").innerHTML = "Nowadays, there are not enough ways for minority groups with disabilities and health issues to earn their own living. In general, they can only be fed by their family or the money provided by charities. This feeling is depressing. Many patients, like those of ALS, feel useless because they can not contribute to their families and the society as other people can do. By establishing an online trade website, we can provide those minority groups with a way to explore and develop their own values and find their place in society."
+      +"<br>"+"<br>";}
+  else
+    {elem.innerText ="EXPLORE OUR STORY >";
+      document.getElementById("demo").innerText = "";}
+}
+
+</script>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="container">
+  <div class="text-center" style="margin-bottom: 22%; margin-top: 22%">
+
+    <img src = "https://dewey.tailorbrands.com/production/brand_version_mockup_image/908/959948908_a50f50a9-3599-4a79-bca1-2e35ff47cca2.png?cb=1530653186" alt = "Logo">
+
+    <h1 style="font-size:70px">
+      <FONT COLOR = "white">
+        <BIG><TT>Welcome to ECare</TT></BIG><BR>
+
+
+    </FONT>
+    </h1>
+
+    <p>
+      <FONT style="font-size:45px">
+      <TT>Feeling More Useful</TT>
+    </FONT><br><br><br>
+
+
+  <button type="button"  onclick="explore()" class="btn btn-primary-outline">
+    <FONT id = "ExploreStory" style="font-size:18px">
+
+      &nbsp;EXPLORE&nbsp;OUR&nbsp;STORY&nbsp;
+
+    </FONT></button><br><br>
+    <div class = "container-fluid">
+  <div class = "col-sm-3"> </div>
+  <div class = "col-sm-6">
+  <p id="demo" style = "font-size:18px"></p>
+  </div>
+  <div class = "col-sm-3"> </div>
+</div>
+
+<button type="button" class="btn btn-primary-outline" onclick="window.location.href='shop'"><FONT style="font-size:18px">
+
+     &nbsp;ENTER&nbsp;>&nbsp;
+   </FONT></button>
+
+
+
+  </p>
+
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>ECare - Feeling More Useful | Add Item</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="https://i.imgur.com/H8wiJy1.png">
+
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <style>
+
+    img{
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            border 1px
+            }
+
+    body {margin:0;}
+    </style>
+
+</head>
+
+
+
+
+
+<body>
+
+
+<div class="main-content-wrapper d-flex clearfix">
+
+  <div class="section-padding-100">
+
+      <div class="container-fluid">
+        <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/308/959947308_540a8725-ca1e-40ec-8b4c-1cd3db55f457.png?cb=1530653134" alt="">
+
+          <div class="row">
+
+
+              <div class ="col-sm-1"> </div>
+              <div class="col-sm-10">
+
+                <div class="checkout_details_area mt-50 clearfix">
+
+                    <div class="cart-title">
+                        <h2>Add Your Item</h2>
+                    </div>
+
+                    <form name="additem" action="/add" method="post">
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <input name="item" type="text" class="form-control" id="first_name" value="" placeholder="Product Name" required>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <input name="price" type="number" min="0.00" max="10000.00" step="0.01" class="form-control" id="first_name" placeholder="Product Price" required>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <input name="firstpic"type="text" class="form-control" id="primepic" placeholder="PrimePic Link">
+                            </div>
+                            <div class="col-12 mb-3">
+                                <input name="secondpic" type="text" class="form-control" id="secondpic" placeholder="SecondPic Link">
+                            </div>
+
+
+                            <div class="col-12 mb-3">
+                                <input name="thirdpic" type="text" class="form-control" id="thirdpic" placeholder="ThirdPic Link">
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <input name="fourthpic" type="text" class="form-control" id="fourthpic" placeholder="FourthPic Link">
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <input name="link" type="text" class="form-control" id="finallink" placeholder="Link to external store.">
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <textarea name="desc" class="form-control w-100" id="comment" cols="30" rows="10" placeholder="Product Description"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn amado-btn w-100">Add Item</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class ="col-sm-1"> </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
+<script src="js/jquery/jquery-2.2.4.min.js"></script>
+<!-- Popper js -->
+<script src="js/popper.min.js"></script>
+<!-- Bootstrap js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Plugins js -->
+<script src="js/plugins.js"></script>
+<!-- Active js -->
+<script src="js/active.js"></script>
+</body>
